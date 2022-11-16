@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width-device-width, initial-scale = 1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Multiplication App</title>
   </head>
   <body>
     <form class="form" id="form">
-      <h4 class="score" id="score">score: 0</h4>
+      <div class="scmax">
+        <h4 class="score" id="score">score: 0</h4>
+        <h4 class="max" id="max">MAX: 10</h4>
+      </div>
       <h1 id="question">What is 1 multiplied by 1?</h1>
       <input
         type="text"
@@ -19,7 +23,7 @@
         autofocus
         autocomplete="off"
       />
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn" id="btn">Submit</button>
     </form>
     <script src="script.js"></script>
   </body>
