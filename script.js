@@ -28,6 +28,14 @@ formE1.addEventListener("submit", () => {
     score--;
     updateScore();
   }
+  if (score == 10) {
+    swal({
+      title: "Great Job",
+      icon: "success",
+      timer: 5000,
+    });
+    localStorage.clear();
+  }
 });
 
 function updateScore() {

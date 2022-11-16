@@ -57,6 +57,14 @@ body{
 
 .score{
         color:rgb(14, 97, 27);
-        text-align: right;
         font-size:20px;
+}
+.max{
+        color:rgb(14, 97, 27);
+        font-size:20px;
+}
+
+.scmax{
+        display: flex;
+        justify-content: space-between;
 }
