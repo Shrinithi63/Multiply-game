@@ -31,8 +31,7 @@ formE1.addEventListener("submit", () => {
   if (score == 10) {
     swal({
       title: "Great Job",
-      icon: "success",
-      timer: 5000,
+      type: "success",
     });
     localStorage.clear();
   }
